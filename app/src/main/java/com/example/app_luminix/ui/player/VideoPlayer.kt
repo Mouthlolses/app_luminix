@@ -51,9 +51,7 @@ fun rememberExoPlayer(context: Context, videoUrl: String): ExoPlayer {
         ExoPlayer.Builder(context).build().apply {
             setMediaItem(MediaItem.fromUri(Uri.parse(videoUrl)))
             prepare()
-            play()
-            playWhenReady = true
-            pause()
+            playWhenReady = false
         }
     }
 
