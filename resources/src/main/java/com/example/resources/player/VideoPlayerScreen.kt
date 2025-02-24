@@ -1,4 +1,4 @@
-package com.example.app_luminix.ui.player
+package com.example.resources.player
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -8,17 +8,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 
 
-//# Tela principal do player
-
-//Este é o ponto de entrada que une os componentes (VideoPlayer e ControlsOverlay).
-
 @Composable
-fun VideoPlayerScreen(videoUrl: String) {
+fun VideoPlayerScreen(videoUrl: String){
+
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Black)
-    ) {
+            .background(color = Color.Black)
+    ){
         VideoPlayer(videoUrl = videoUrl)
     }
+
 }

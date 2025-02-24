@@ -1,4 +1,4 @@
-package com.example.app_luminix.ui.player
+package com.example.resources.player
 
 import android.content.Context
 import android.net.Uri
@@ -34,11 +34,13 @@ fun VideoPlayer(videoUrl: String) {
             .padding(WindowInsets.navigationBars.asPaddingValues())
     ) {
         AndroidView(
-            modifier = Modifier.fillMaxSize(),
+            modifier = Modifier
+                .fillMaxSize(),
             factory = { ctx ->
-                PlayerView(ctx).apply {
+                PlayerView(ctx).apply{
                     player = exoPlayer
                     useController = true
+
                 }
             }
         )
