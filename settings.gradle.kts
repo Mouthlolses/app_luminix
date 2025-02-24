@@ -21,3 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "app_luminix"
 include(":app")
+include(":apptv")
+include(":resources")
